@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="pt-BR" xmlns:mso="urn:schemas-microsoft-com:office:office"
+    xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <title>Casa Melhor Idade — Cuidado, Conforto e Carinho 24h</title>
+
+    <meta name="description"
+        content="A Casa Melhor Idade oferece acolhimento e assistência completa para idosos no Rio de Janeiro. Contamos com equipe médica, fisioterapia e recreação.">
+
+    <meta name="keywords"
+        content="casa de repouso, lar para idosos, assistência 24h, cuidado com idosos, fisioterapia para idosos, rio de janeiro">
+
+    <meta property="og:title" content="Casa Melhor Idade — Cuidado e Conforto 24h">
+    <meta property="og:description"
+        content="Oferecemos acolhimento, recreação e acompanhamento médico e fisioterápico 24h.">
+    <meta property="og:image" content="imagem/area de convivencia.webp">
+    <meta property="og:url" content="https://www.seusite.com">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </noscript>
+
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
+
+    <style>
+        /* 
+    html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bs-success: #6bb48d;
+    --bs-success-rgb: 107, 180, 141;
+}
+
+.bg-light-green {
+    background-color: #e8f6ef;
+}
+
+.card-hover:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* --- ESTILOS DO CARROSSEL --- */
+
+        .carousel-item {
+            position: relative;
+        }
+
+        .carousel-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, transparent 60%);
+            z-index: 1;
+        }
+
+        .carousel-item img {
+            opacity: 0.85;
+            transition: opacity 0.3s ease, filter 0.3s ease;
+            filter: brightness(0.9);
+        }
+
+        .carousel-item img:hover {
+            opacity: 1;
+            filter: brightness(1);
+        }
+
+        .carousel-caption {
+            z-index: 2;
+            background: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* --- FIM DOS ESTILOS DO CARROSSEL --- */
+
+        #btnTopo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: var(--bs-success);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateX(-50%) translateY(100px);
+            visibility: hidden;
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+            z-index: 1000;
+        }
+
+        #btnTopo.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            visibility: visible;
+        }
+
+        #btnTopo:hover {
+            background-color: #5aa17d;
+        }
+
+
+        /* OTIMIZAÇÃO DE ACESSIBILIDADE: Contraste
+          Criamos um verde mais escuro para passar nos testes.
+        */
+        .bg-success-darker {
+            background-color: #146c43 !important;
+            /* Um verde mais escuro que o padrão */
+        }
+
+        .text-success-darker {
+            color: #146c43 !important;
+            /* Mesmo verde escuro para texto */
+        }
+
+        /* MELHORIA UX: Scroll Suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CORREÇÃO UI: Definição da classe de fundo claro */
+        .bg-light-green {
+            background-color: #f8fdf8;
+            /* Um verde bem claro e suave */
+        }
+
+        /* CORREÇÃO UI: Efeito de hover nos cards de serviço */
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: scale(1.03);
+            /* Leve aumento */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            /* Sombra mais suave */
+        }
+
+        .gallery-thumbnail {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .gallery-thumbnail:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .map-container iframe {
+            border-radius: 0.375rem;
+        }
+
+        /* Estilo para padronizar as fotos circulares da equipe */
+        .card .rounded-circle {
+            width: 150px;
+            /* Largura da imagem */
+            height: 150px;
+            /* Altura da imagem */
+            object-fit: cover;
+            /* Garante que a foto não fique distorcida */
+            margin-top: 15px;
+            /* Adiciona um espaço no topo */
+        }
+
+        /* Estilo para ajustar a altura do carrossel */
+        #estruturaCarousel .carousel-item img {
+            max-height: 400px;
+            width: 100%;
+            object-fit: cover;
+            /* Essencial para não distorcer a imagem */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success-darker shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imagem/logotipo casa melhor idade.png" alt="Logotipo Casa Melhor Idade" width="100"
+                        height="100" class="me-3">
+                    <span class="fs-4 fw-bold">Casa Melhor Idade</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#estrutura">Estrutura</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item ms-lg-3"><a class="btn btn-outline-light btn-sm" data-bs-toggle="offcanvas"
+                                href="#offcanvasInfo" role="button" aria-controls="offcanvasInfo"><i
+                                    class="bi bi-info-circle-fill me-1"></i> Acesso Rápido
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <h2 class="text-center text-success-darker display-5 mb-4" data-aos="fade-up">Sobre Nós</h2>
+                <p class="lead text-start" data-aos="fade-up" data-aos-delay="100">A <strong>Casa Melhor Idade</strong>
+                    é um lar voltado para o bem-estar de nossos residentes. Oferecemos acolhimento, recreação e
+                    acompanhamento médico e fisioterápico, com uma equipe disponível 24 horas por dia. Nosso objetivo é
+                    proporcionar conforto, segurança e qualidade de vida a cada idoso, com muito amor e respeito.</p>
+            </div>
+        </section>
+
+        <section id="equipe" class="py-5 bg-light-green">
+            <div class="container">
+                <h2 class="text-center text-success-darker display-5 mb-5" data-aos="fade-up">Nossa Equipe Dedicada</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card text-center h-100 shadow-sm">
+                            <img src="imagem/diretora médica.webp" class="rounded-circle mx-auto"
+                                alt="Foto da Diretora Clínica" loading="lazy" width="150" height="150">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Dra. Camila Torres</h3>
+                                <p class="text-muted">Diretora Clínica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card text-center h-100 shadow-sm">
+                            <img src="imagem/fisioterapeuta.webp" class="rounded-circle mx-auto"
+                                alt="Foto do Fisioterapeuta" loading="lazy" width="150" height="150">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Ricardo Alves</h3>
+                                <p class="text-muted">Fisioterapeuta Chefe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card text-center h-100 shadow-sm">
+                            <img src="imagem/Enfermeira.webp" class="rounded-circle mx-auto"
+                                alt="Foto da Enfermeira Chefe" loading="lazy" width="150" height="150">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Sandra Oliveira</h3>
+                                <p class="text-muted">Enfermeira Chefe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="servicos" class="py-5">
+            <div class="container">
+                <h2 class="text-center text-success-darker display-5 mb-5" data-aos="fade-up">Nossos Serviços</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 text-center shadow-sm card-hover w-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5"><span aria-hidden="true">🩺</span> Assistência Médica</h3>
+                                <p class="card-text">Atendimento médico regular e acompanhamento de saúde personalizado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 text-center shadow-sm card-hover w-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5"><span aria-hidden="true">🏃‍♂️</span> Fisioterapia</h3>
+                                <p class="card-text">Atividades leves e fisioterapia diária para manter a mobilidade e o
+                                    bem-estar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 text-center shadow-sm card-hover w-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5"><span aria-hidden="true">🎨</span> Recreação e Lazer</h3>
+                                <p class="card-text">Momentos de descontração, arte, música e convivência entre os
+                                    moradores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100 text-center shadow-sm card-hover w-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5"><span aria-hidden="true">📹</span> Segurança 24h</h3>
+                                <p class="card-text">Monitoramento por câmeras e equipe presente em tempo integral.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="py-5 bg-light-green">
+            <div class="container">
+                <h2 class="text-center text-success-darker display-5 mb-5" data-aos="fade-up">O Que Dizem Sobre Nós</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card shadow-sm w-100">
+                            <div class="card-body text-center d-flex flex-column">
+                                <img src="imagem/Rosto Maria.webp" class="rounded-circle mx-auto mb-3"
+                                    alt="Foto de Maria S." loading="lazy" width="100" height="100"
+                                    style="object-fit: cover;">
+                                <blockquote class="blockquote mb-0 flex-grow-1">
+                                    <p>"Encontramos na Casa Melhor Idade um verdadeiro lar para nossa mãe. A equipe é
+                                        atenciosa e o cuidado é excepcional."</p>
+                                </blockquote>
+                                <footer class="blockquote-footer mt-3">Maria S. <cite title="Source Title">Filha de
+                                        residente</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card shadow-sm w-100">
+                            <div class="card-body text-center d-flex flex-column">
+                                <img src="imagem/Rosto João.webp" class="rounded-circle mx-auto mb-3"
+                                    alt="Foto de João P." loading="lazy" width="100" height="100"
+                                    style="object-fit: cover;">
+                                <blockquote class="blockquote mb-0 flex-grow-1">
+                                    <p>"Meu pai melhorou muito desde que chegou aqui. As atividades e a fisioterapia
+                                        fazem toda a diferença. Recomendo de olhos fechados."</p>
+                                </blockquote>
+                                <footer class="blockquote-footer mt-3">João P. <cite title="Source Title">Filho de
+                                        residente</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card shadow-sm w-100">
+                            <div class="card-body text-center d-flex flex-column">
+                                <img src="imagem/Rosto Ana.webp" class="rounded-circle mx-auto mb-3"
+                                    alt="Foto de Ana L." loading="lazy" width="100" height="100"
+                                    style="object-fit: cover;">
+                                <blockquote class="blockquote mb-0 flex-grow-1">
+                                    <p>"A tranquilidade de saber que minha avó está segura e feliz não tem preço. A
+                                        comunicação com a equipe é sempre clara e transparente."</p>
+                                </blockquote>
+                                <footer class="blockquote-footer mt-3">Ana L. <cite title="Source Title">Neta de
+                                        residente</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="estrutura" class="py-5">
+            <div class="container">
+                <div data-aos="fade-up">
+                    <h2 class="text-center text-success-darker display-5 mb-5">Nossa Estrutura</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 d-none d-lg-block">
+                            <div id="estruturaCarousel" class="carousel slide carousel-fade shadow rounded"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imagem/area de convivencia.webp" class="d-block w-100 rounded"
+                                            alt="Área de convivência" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Espaços de Convivência</h5>
+                                            <p>Ambientes amplos e acolhedores para interação, amizades e momentos
+                                                felizes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/quartos confortáveis.webp" class="d-block w-100 rounded"
+                                            alt="Quartos confortáveis" loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Aconchego e Privacidade</h5>
+                                            <p>Nossos quartos são pensados para oferecer o máximo de conforto e
+                                                segurança.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/equipe_cuidadores.webp" class="d-block w-100 rounded"
+                                            alt="Equipe de cuidadores" loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Cuidado que Inspira Confiança</h5>
+                                            <p>Uma equipe dedicada, pronta para oferecer o melhor cuidado 24 horas por
+                                                dia.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/area de jardins.webp" class="d-block w-100 rounded"
+                                            alt="Área externa e jardim" loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Contato com a Natureza</h5>
+                                            <p>Jardins seguros para banhos de sol, caminhadas leves e ar puro.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/banheiro adaptado.webp" class="d-block w-100 rounded"
+                                            alt="Banheiro Adaptado" loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Segurança em Cada Detalhe</h5>
+                                            <p>Banheiros totalmente adaptados para garantir a autonomia de nossos
+                                                moradores.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/posto de enfermagem.webp" class="d-block w-100 rounded"
+                                            alt="Posto de Enfermagem" loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Saúde e Bem-Estar</h5>
+                                            <p>Acompanhamento contínuo e atendimento rápido para a sua tranquilidade.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/cozinha adaptada.webp" class="d-block w-100 rounded"
+                                            alt="Cozinha Adaptada" loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Sabor de Casa</h5>
+                                            <p>Refeições balanceadas e deliciosas, preparadas com muito carinho.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagem/sala de tv.webp" class="d-block w-100 rounded" alt="Sala de TV"
+                                            loading="lazy" width="1200" height="675">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Lazer e Entretenimento</h5>
+                                            <p>Momentos de descontração e cultura em nossa confortável sala de TV e
+                                                leitura.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#estruturaCarousel"
+                                    data-bs-slide="prev"><span class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#estruturaCarousel"
+                                    data-bs-slide="next"><span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-0 mt-lg-5" data-aos="fade-up">
+                    <h3 class="text-success d-none d-lg-block">Conheça mais detalhes</h3>
+                    <p class="lead">Clique nas imagens para ampliar</p>
+                </div>
+                <div class="row g-3 mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/area de convivencia.webp" alt="Refeitório"
+                            class="img-fluid rounded shadow gallery-thumbnail" data-bs-toggle="modal"
+                            data-bs-target="#galleryModal" loading="lazy" width="400" height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/quartos confortáveis.webp"
+                            alt="Quarto individual" class="img-fluid rounded shadow gallery-thumbnail"
+                            data-bs-toggle="modal" data-bs-target="#galleryModal" loading="lazy" width="400"
+                            height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/banheiro adaptado.webp"
+                            alt="Banheiro adaptado" class="img-fluid rounded shadow gallery-thumbnail"
+                            data-bs-toggle="modal" data-bs-target="#galleryModal" loading="lazy" width="400"
+                            height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/sala de tv.webp" alt="Sala de TV"
+                            class="img-fluid rounded shadow gallery-thumbnail" data-bs-toggle="modal"
+                            data-bs-target="#galleryModal" loading="lazy" width="400" height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/area de jardins.webp"
+                            alt="Jardim de inverno" class="img-fluid rounded shadow gallery-thumbnail"
+                            data-bs-toggle="modal" data-bs-target="#galleryModal" loading="lazy" width="400"
+                            height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/posto de enfermagem.webp"
+                            alt="Posto de enfermagem" class="img-fluid rounded shadow gallery-thumbnail"
+                            data-bs-toggle="modal" data-bs-target="#galleryModal" loading="lazy" width="400"
+                            height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/cozinha adaptada.webp"
+                            alt="Cozinha Adaptada" class="img-fluid rounded shadow gallery-thumbnail"
+                            data-bs-toggle="modal" data-bs-target="#galleryModal" loading="lazy" width="400"
+                            height="300"></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3"><img src="imagem/equipe_cuidadores.webp"
+                            alt="Espaço de convivência" class="img-fluid rounded shadow gallery-thumbnail"
+                            data-bs-toggle="modal" data-bs-target="#galleryModal" loading="lazy" width="400"
+                            height="300"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-5 bg-light-green">
+            <div class="container" data-aos="fade-up">
+                <h2 class="text-center text-success-darker display-5 mb-5">Perguntas Frequentes</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">Quais são as modalidades de hospedagem?</button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Oferecemos as modalidades de residência permanente e
+                                        temporária (pós-operatório, férias da família, etc.). Entre em contato para
+                                        entendermos sua necessidade específica.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">Como é a alimentação dos residentes?</button></h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Temos 6 refeições diárias com cardápio elaborado por
+                                        nossa nutricionista, adaptado para as necessidades individuais de cada idoso,
+                                        incluindo dietas restritivas (diabetes, hipertensão, etc.).</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">Quais atividades são oferecidas?</button></h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Promovemos atividades diárias para estimular o corpo e a
+                                        mente, como fisioterapia em grupo, musicoterapia, oficinas de artesanato, jogos
+                                        de tabuleiro, tardes de cinema e celebrações de datas comemorativas.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agendar" class="py-5 bg-success-darker text-white">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Pronto para Conhecer?</h2>
+                <p class="lead my-4">Agende uma visita e venha tomar um café conosco. <br>Estamos de portas abertas para
+                    receber você e sua família.</p>
+                <a href="https://wa.me/5521970088404" target="_blank" class="btn btn-light btn-lg fw-bold px-5 py-3">
+                    <i class="bi bi-whatsapp me-2"></i>Agendar Visita Agora
+                </a>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5">
+            <div class="container">
+                <h2 class="text-center text-success-darker display-5 mb-5" data-aos="fade-up">Entre em Contato</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                        <h3 class="text-success-darker">Nossos Canais</h3>
+                        <p class="lead">📍 Endereço: Est Benvindo de Novaes, 2555 - Recreio dos Bandeirantes - Rio de
+                            Janeiro, RJ</p>
+                        <p class="lead">📧 E-mail: <a href="mailto:contato@casamelhoridade.com"
+                                class="text-success fw-bold">contato@casamelhoridade.com</a></p>
+                        <p class="lead"><i class="bi bi-whatsapp"></i> WhatsApp: <a href="https://wa.me/5521970088404"
+                                target="_blank" class="text-success fw-bold">(21) 97008-8404</a></p>
+                        <p>Estamos disponíveis para tirar suas dúvidas e agendar uma visita. Será um prazer recebê-lo!
+                        </p>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                        <div class="map-container shadow">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4332512554766!2d-43.4358826!3d-23.0084333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdae034050e1f%3A0x62c933094892c90c!2sEst.%20Benvindo%20de%20Novaes%2C%202555%20-%20Recreio%20dos%20Bandeirantes%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022790-900!5e0!3m2!1spt-BR!2sbr!4v1730038753235!5m2!1spt-BR!2sbr"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Mapa da localização da Casa Melhor Idade"> </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-success-darker text-white text-center p-4">
+        <div class="container">
+            <p class="mb-0">© 2025 Casa Melhor Idade — Todos os direitos reservados. Criado por L.A.</p>
+        </div>
+    </footer>
+
+    <a href="#topo" id="btnTopo" class="fs-4" role="button" aria-label="Voltar ao topo">⬆</a>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfo" aria-labelledby="offcanvasInfoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-success-darker" id="offcanvasInfoLabel"><i
+                    class="bi bi-info-circle-fill me-2"></i>Acesso Rápido</h5><button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Aqui você encontra informações importantes.</p>
+            <div class="d-grid gap-2 mb-4"><a href="https://wa.me/5521970088404" target="_blank"
+                    class="btn btn-success"><i class="bi bi-calendar-check me-2"></i>Agendar uma Visita</a></div>
+            <hr>
+            <h6><i class="bi bi-clock-history me-2"></i>Horário de Visitação</h6>
+            <p>Todos os dias, das 14h às 17h.</p>
+            <hr>
+            <h6><i class="bi bi-gem me-2"></i>Nossos Diferenciais</h6>
+            <ul class="list-unstyled">
+                <li>✔️ Equipe de cuidadores 24h</li>
+                <li>✔️ Acompanhamento médico</li>
+                <li>✔️ Cardápio com nutricionista</li>
+                <li>✔️ Atividades recreativas diárias</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Visualizar Imagem</h5><button type="button"
+                        class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"><img src="" id="modalImage" class="img-fluid w-100" alt="Imagem da galeria">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Só inicializa o AOS se o script tiver sido carregado
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true,
+                });
+            }
+
+            // Script para o botão "Voltar ao Topo"
+            const btnTopo = document.getElementById("btnTopo");
+            const toggleBtnVisibility = () => {
+                if (window.scrollY > 100) { btnTopo.classList.add("show"); }
+                else { btnTopo.classList.remove("show"); }
+            };
+            window.addEventListener("scroll", toggleBtnVisibility);
+
+            // Script para o Modal da Galeria
+            const galleryModal = document.getElementById('galleryModal');
+            if (galleryModal) {
+                galleryModal.addEventListener('show.bs.modal', event => {
+                    const trigger = event.relatedTarget;
+                    const imageSrc = trigger.getAttribute('src');
+                    const modalImage = document.getElementById('modalImage');
+                    modalImage.src = imageSrc;
+                    const imageAlt = trigger.getAttribute('alt'); // Pega o texto do 'alt' da miniatura
+                    const modalTitle = document.getElementById('galleryModalLabel'); // Encontra o título do modal
+                    if (imageAlt && modalTitle) { // Verifica se ambos existem
+                        modalTitle.textContent = imageAlt; // Atualiza o texto do título do modal
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

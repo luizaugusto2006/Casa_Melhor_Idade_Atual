@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bs-success: #6bb48d;
+    --bs-success-rgb: 107, 180, 141;
+}
+
+.bg-light-green {
+    background-color: #e8f6ef;
+}
+
+.card-hover:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* --- ESTILOS DO CARROSSEL --- */
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, transparent 60%);
+    z-index: 1;
+}
+
+.carousel-item img {
+    opacity: 0.85; 
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.carousel-item img:hover {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+.carousel-caption {
+    z-index: 2;
+    background: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* --- FIM DOS ESTILOS DO CARROSSEL --- */
+
+#btnTopo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bs-success);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateX(-50%) translateY(100px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+#btnTopo.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    visibility: visible;
+}
+
+#btnTopo:hover {
+    background-color: #5aa17d;
+}
